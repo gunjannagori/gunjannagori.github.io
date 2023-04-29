@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Paint emoji</title>
+  <meta name="viewport"content="width=680"/>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <style>
+    canvas {
+      border: 1px black solid;
+      background: url("test2.png");
+      cursor: crosshair;
+    }
+    .selected {
+      border: 1px black solid;
+    }
+    input[type=text] {
+      font-size: 1em;
+      height: 1.5em;
+    }
+    button { font-size: 1em; }
+  </style>
+
+  <script>
+
+    document.addEventListener("mousemove", (event)=>{
+      gsap.to(".text", {
+          x: event.clientX,
+          y: event.clientY,
+          stagger: -0.04
+      })
+  })
+
+  </script>
+  <script src="./build/app.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.17/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.4.17/addons/p5.dom.js"></script>
+</head>
+<body>
+
+  <div class="cursor">
+    <div class="text">
+        <span>“We should all be feminists.” </span>
+    </div>
+</div>
+
+
+
+<div class="footer"> <a href="./index-1.html"><button>previous</buttons></a>
+  <a href="./index-2.html"><button>next</buttons></a></div>
+
+</body>
+</html>
+
