@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Basic Paint App</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	<script type="text/javascript" src="library/p5.min.js"></script>
+	<script type="text/javascript" src="library/p5.dom.js"></script>
+	<script type="text/javascript" src="library/p5.sound.js"></script>
+	<script type="text/javascript" src="main.js"></script>
+	
+</head>
+<style>
+	.material-symbols-outlined {
+	  font-variation-settings:
+	  'FILL' 0,
+	  'wght' 400,
+	  'GRAD' 0,
+	  'opsz' 48
+	}
+	</style>
+<body>
+	<div id="sidebar">
+		<div class="row heading">
+			<h2>Paint</h2>
+		</div>
+		<div class="row">
+			<p>Brush Color</p>
+			<input type="color" id="brushColor">
+		</div>
+		<div class="row">
+			<p>Background Color</p>
+			<input type="color" id="bgColor"> 
+		</div>
+		<div class="row">
+			<p>Size</p>
+			<input type="range" id="sizeRange" min="2" max="20" value="5" steps="2">
+		</div>
+		<div class="row">
+			<p>Pen Style</p>
+			
+
+			<div><span class="material-symbols-outlined">
+				draw
+				</span></span><input type="checkbox" id="pencil" checked="true"></div>
+			
+			
+			
+				<div><span class="material-symbols-outlined">
+				brush
+				</span><input type="checkbox" id="brush"></div>
+			
+			
+			
+				<div><span class="material-symbols-outlined">
+					format_ink_highlighter
+					</span><input type="checkbox" id="eraser"></div>
+
+
+
+					<br> <p>Shapes</p>
+
+
+			<div><span class="material-symbols-outlined">
+				square
+				</span><input type="checkbox" id="square"></div>
+			
+			
+			
+			
+				<div><span class="material-symbols-outlined">
+					circle
+					</span><input type="checkbox" id="circle"></div>
+				
+		<div class="row">
+			<p><a href="#" id="saveCanvas">Save</a></p>
+			<p><a href="#" id="clearCanvas">Clear</a></p>
+		</div>
+	</div>
+</body>
+</html>
