@@ -13,7 +13,7 @@ function setup() {
 
 	brushColor = '#151718';
 	bgColor = '#c8c8c8';
-	drawSize = 3;
+	drawSize = 100;
 	penStyle = 'pencil';
 
 	_('brushColor').value = brushColor;
@@ -33,7 +33,7 @@ function setup() {
 		document.body.style.background = bgColor;
 	};
 	_('sizeRange').onchange = function(){
-		var size = map(_('sizeRange').value,2,20,4,20);
+		var size = map(_('sizeRange').value,2,40,4,40);
 		drawSize = size;
 	}
 
